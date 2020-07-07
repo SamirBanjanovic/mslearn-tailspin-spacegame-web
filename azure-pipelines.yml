@@ -12,10 +12,13 @@ pool:
   - npm
 
 variables:
-  secApi-Key: '123456789-1234567890'
   buildConfiguration: 'Release'
 
 steps:
+- script: |
+    echo $(sec-api-key)
+    echo $(glapi)
+
 - task: UseDotNet@2
   displayName: 'Use .NET Core SDK 3.1.300'
   inputs:
