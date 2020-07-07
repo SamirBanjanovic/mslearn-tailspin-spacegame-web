@@ -12,6 +12,7 @@ pool:
   - npm
 
 variables:
+  secApi-Key: '123456789-1234567890'
   buildConfiguration: 'Release'
 
 steps:
